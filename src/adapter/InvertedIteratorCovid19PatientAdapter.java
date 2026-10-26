@@ -22,7 +22,7 @@ public class InvertedIteratorCovid19PatientAdapter implements InvertedIterator{
 
 	@Override
 	public boolean hasPrevious() {
-		return pos<0;
+		return pos>=0;
 	}
 
 	@Override
