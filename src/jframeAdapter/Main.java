@@ -18,7 +18,6 @@ import factory.FactorySympthom;
 			p.addSymptom(new Symptom("s4", 10, 10), 4);
 			p.addSymptom(new Symptom("s5", 10, 10), 5);
 			
-			
 			//Covid19PacientModelAdapter pacientModelAdapter=new Covid19PacientModelAdapter(p);        
 			
 			JFrame j=new JFrame();
@@ -29,8 +28,5 @@ import factory.FactorySympthom;
 		     j.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);       
 		     j.pack();
 		     j.setVisible(true);
-
 		}
-
 	}
-
