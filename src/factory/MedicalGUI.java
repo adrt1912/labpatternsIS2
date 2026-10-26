@@ -26,7 +26,6 @@ public class  MedicalGUI extends JFrame {
 	private Medicament m;
 	private JLabel medicamentLabel;
 
-	
 	/**
 	 * Create the frame.
 	 */
@@ -65,7 +64,6 @@ public class  MedicalGUI extends JFrame {
 
 				String symptomName=symptonNameField.getText();
 				removeSymptom(symptomName);
-
 				
 			} 
 		});
@@ -92,7 +90,6 @@ public class  MedicalGUI extends JFrame {
 		medicamentLabel.setText(med.getName());
 		m=med;
 		this.setVisible(true);
-		
 	}
 	
 	public void addSymptom(Medicament m, String symptomName) {
@@ -105,8 +102,7 @@ public class  MedicalGUI extends JFrame {
 					reportLabel.setText(createReport());
 				} else errorLabel.setText("<html>ERROR, Symptom <b>"+symptomName+ "</b> does not exist </html>");
 		  } 
-		  else errorLabel.setText("<html>ERROR, Symptom <b>"+symptomName+"</b> already assigned</html> ");
-		  
+		  else errorLabel.setText("<html>ERROR, Symptom <b>"+symptomName+"</b> already assigned</html> ");  
 	}
 	
 	public void removeSymptom(String symptomName) {
@@ -128,8 +124,6 @@ public class  MedicalGUI extends JFrame {
 	    	 if (p2!=null) s=s+p2.toString()+"<br>";	
 	    }
 	    s=s+"</html>";
-        return s;	}
-	
-
+        return s;	
+        }
 }
-

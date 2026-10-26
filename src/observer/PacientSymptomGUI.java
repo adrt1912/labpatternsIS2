@@ -1,6 +1,5 @@
 package observer;
 
-
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
@@ -24,7 +23,6 @@ public class PacientSymptomGUI extends JFrame {
 	private JLabel errorLabel;
 	private JLabel lblPacient;
 	private JLabel labelPacient;
-
 	
 	/**
 	 * Create the frame.
@@ -79,10 +77,10 @@ public class PacientSymptomGUI extends JFrame {
 				if (new Integer(weightField.getText())<=3) {
 		    	System.out.println("Symptom added :"+(Symptom)symptomComboBox.getSelectedItem());
 
-				//addSymptomByName ...
-				
+		    	p.addSymptomByName(((Symptom)symptomComboBox.getSelectedItem()).getName(), 
+		    			Integer.parseInt(weightField.getText()));
+		    	
 			} else errorLabel.setText("ERROR, Weight between [1..3]");
-				
 			}
 		});
 		btnNewButton.setBounds(88, 202, 117, 29);
@@ -92,11 +90,9 @@ public class PacientSymptomGUI extends JFrame {
 		btnRemoveSymptom.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				errorLabel.setText(" ");
-
 		    	System.out.println("Symptom removed :"+(Symptom)symptomComboBox.getSelectedItem());
 
-				//removeSymptomByName...
-				
+		    	p.removeSymptomByName(((Symptom)symptomComboBox.getSelectedItem()).getName());
 			} 
 		});
 		btnRemoveSymptom.setBounds(255, 202, 147, 29);

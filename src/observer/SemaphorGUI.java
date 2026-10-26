@@ -7,7 +7,6 @@ import java.util.Observer;
 
 import javax.swing.JFrame;
 
-
 public class SemaphorGUI extends JFrame {
 	/** stores the associated ConcreteSubject */
 	public SemaphorGUI () {
@@ -19,4 +18,3 @@ public class SemaphorGUI extends JFrame {
 		setVisible(true);
 	}
 }     
-

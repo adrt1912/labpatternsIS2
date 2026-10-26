@@ -18,10 +18,8 @@ import java.awt.Font;
 
 public class PacientSymptomGUI extends JFrame {
 
-	
 	private Covid19Pacient p;
 	
-
 	private JPanel contentPane;
 	private JTextField weightField;
 	private JButton btnRemoveSymptom;
@@ -132,7 +130,6 @@ public class PacientSymptomGUI extends JFrame {
 			errorLabel.setText("Symptom removed :"+symptomName);
 			reportLabel.setText(createReport());
 
-		
 	     } else errorLabel.setText("ERROR, Symptom does not exist");
 	}
 	
